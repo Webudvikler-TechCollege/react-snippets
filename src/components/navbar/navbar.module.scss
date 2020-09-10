@@ -1,0 +1,19 @@
+.navbar{
+    position: relative;
+    top:0;
+    display: grid;
+    width: 100%;
+    justify-items: center;
+    justify-content: center;
+    background-color: rgb(230,230,230);
+
+}
+        .link{
+            display: inline-block;
+            font-size: 1rem;
+            text-decoration: none;
+            margin: 8px;
+            padding: 8px;
+            color: black;
+            cursor: pointer;
+        }

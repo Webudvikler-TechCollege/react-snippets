@@ -1,13 +1,14 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useForm } from "react-hook-form";
 import { ErrorMessage } from "@hookform/error-message"
+import Styles from './Form.module.scss'
 
 function date2unix(date) {
     let stamp = new Date(date);
     return stamp.getTime() / 1000;
 }
 
-function Tilmelding(props) {
+function Form(props) {
 
     // states til RHF 
     const { register, handleSubmit, errors } = useForm();
@@ -64,9 +65,11 @@ function Tilmelding(props) {
                         <option value="2">5 km</option>
                         <option value="3">10 km</option>
                     </select>
-                    <ErrorMessage errors={errors} name={"run_id"}>
-                        {({message}) => <span>{message}</span>}
-                    </ErrorMessage>
+                    <span className={Styles.error}>
+                        <ErrorMessage errors={errors} name={"run_id"}>
+                                {({message}) => <span>{message}</span>}
+                        </ErrorMessage>
+                    </span>
                 </div>
                 <div>
                     <label htmlFor="firstname">Fornavn:</label>
@@ -170,4 +173,4 @@ function Tilmelding(props) {
     )
 }
 
-export default Tilmelding
+export default Form

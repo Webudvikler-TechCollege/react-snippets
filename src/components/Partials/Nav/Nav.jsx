@@ -11,7 +11,8 @@ function Navbar() {
                 <Link className={Style.link} to="/login">Login</Link>
                 <Link className={Style.link} to="/ratings">Ratings</Link>
                 <Link className={Style.link} to="/addtocard">Tilføj kurv</Link>
-                <Link className={Style.link} to="/tilmelding">Tilmelding</Link>
+                <Link className={Style.link} to="/form">Tilmelding</Link>
+                <Link className={Style.link} to="/liste">Lister</Link>
             </ul>
         </nav>
     )

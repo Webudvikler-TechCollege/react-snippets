@@ -12,11 +12,12 @@ import Main from './components/Partials/Main/Main';
 import Footer from './components/Partials/Footer/Footer';
 
 import Home from './components/Home/Home';
-import Hoteller from './components/Overlook/Overlook';
+import Overlook from './components/Overlook/Overlook';
 import Login from './components/Login/Login';
 import Ratings from './components/Ratings/Ratings';
 import AddToCart from './components/Addtocart/Addtocart';
-import Tilmelding from './components/Subscribe/Subscribe';
+import Form from './components/Form/Form';
+import List from './components/List/List';
 
 
 function App() {
@@ -55,7 +56,7 @@ function App() {
           </Route>
 
           <Route path="/hoteller">
-            <Hoteller doFetch={doFetch}/>
+            <Overlook doFetch={doFetch}/>
           </Route>
 
           <Route path="/ratings">
@@ -66,8 +67,12 @@ function App() {
             <AddToCart loginData={loginData} doFetch={doFetch}/>
           </Route>
           
-          <Route path="/tilmelding">
-            <Tilmelding loginData={loginData} doFetch={doFetch}/>
+          <Route path="/form">
+            <Form loginData={loginData} doFetch={doFetch}/>
+          </Route>
+
+          <Route path="/liste">
+            <List loginData={loginData} doFetch={doFetch}/>
           </Route>
           
           <Route path="/">

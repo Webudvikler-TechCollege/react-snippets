@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useCallback } from './node_modules/react';
-import { useForm } from "./node_modules/react-hook-form";
-import { ErrorMessage } from "./node_modules/@hookform/error-message"
+import React, { useState, useEffect, useCallback } from 'react';
+import { useForm } from "react-hook-form";
+import { ErrorMessage } from "@hookform/error-message"
 
 
 function AddToCart(props) {

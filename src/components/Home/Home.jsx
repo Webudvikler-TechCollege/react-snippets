@@ -1,10 +1,10 @@
 import React from 'react'
 
-function Forside(){
+function Home() {
 
     return (
         <div><h1>HEY FORSIDE</h1></div>
     )
 }
 
-export default Forside
+export default Home

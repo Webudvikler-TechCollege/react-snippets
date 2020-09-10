@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 
-function Login(props){
+function Login (props) {
 
     // Ha lavet en form
     // sendt det formdata til API

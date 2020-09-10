@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
-import Style from './hoteller.module.scss'
+import Style from './Overlook.module.scss'
 
-function Hoteller(props){
+function Overlook(props){
 
     // states til at gemme ID og data fra api
     const [countries, setCountries] = useState([])
@@ -85,4 +85,4 @@ function Hoteller(props){
     )
 }
 
-export default Hoteller
+export default Overlook

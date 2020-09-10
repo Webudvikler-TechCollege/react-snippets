@@ -1,16 +1,22 @@
 import React, {useState, useEffect} from 'react';
+
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
-import Forside from './components/forside/forside';
-import Navbar from './components/navbar/navbar';
-import Hoteller from './components/hoteller/hoteller';
-import Login from './components/login/login';
-import Ratings from './components/ratings/ratings';
-import AddToCart from './components/addtocart/addtocart';
-import Tilmelding from './components/tilmelding/tilmelding';
+
+import Header from './components/Partials/Header/Header';
+import Navbar from './components/Partials/Nav/Nav';
+import Main from './components/Partials/Main/Main';
+import Footer from './components/Partials/Footer/Footer';
+
+import Home from './components/Home/Home';
+import Hoteller from './components/Overlook/Overlook';
+import Login from './components/Login/Login';
+import Ratings from './components/Ratings/Ratings';
+import AddToCart from './components/Addtocart/Addtocart';
+import Tilmelding from './components/Subscribe/Subscribe';
 
 
 function App() {
@@ -40,8 +46,9 @@ function App() {
   // Router med routes der renderer vores componenter
   return (
     <Router>
+        <Header />
         <Navbar/>
-          <Switch>
+        <Switch>
 
           <Route path="/login">
             <Login loginData={loginData} setLoginData={setLoginData}/>
@@ -64,10 +71,14 @@ function App() {
           </Route>
           
           <Route path="/">
-            <Forside/>    
+            <Home/>    
           </Route>
 
+          <Main />
+          <Footer />
+
         </Switch>
+
     </Router>
   )
 }

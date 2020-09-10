@@ -7,7 +7,6 @@ function AddToCart(props) {
     const [productData, setProducts] = useState([]);
     
     async function toCart() {
-        console.log(items);
 
         let formData = new FormData();
         formData.append('quantity', items.quantity)
